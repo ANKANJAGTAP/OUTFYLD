@@ -9,6 +9,8 @@ app.use(cors({
   origin: [
     "http://localhost:5173",
     "https://outfyldfrontend.onrender.com",
+    "https://www.outfyld.in/",
+    "https://outfyld.in",
   ],
   methods: "GET,POST,PUT,DELETE",
   credentials: true
