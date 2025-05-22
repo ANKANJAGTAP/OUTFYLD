@@ -1,0 +1,124 @@
+import React from 'react';
+import {
+  MapPin,
+  Phone,
+  Clock,
+  Mail as MailIcon,
+  Facebook,
+  Twitter,
+  Linkedin,
+  Instagram
+} from 'lucide-react';
+
+const ContactUs = () => {
+  return (
+    <div className="min-h-screen flex flex-col bg-white dark:bg-charcoal">
+      {/* Header */}
+      <header>
+        <div className="max-w-7xl mx-auto px-6 py-4 flex items-center">
+          <a href="/" className="inline-block">
+            <img src="[YOUR_LOGO_URL]" alt="[YOUR COMPANY NAME] logo" className="h-12" />
+          </a>
+        </div>
+      </header>
+
+      {/* Main Content */}
+      <main className="flex-grow">
+        {/* Hero Section */}
+        <section className="py-20">
+          <div className="max-w-4xl mx-auto text-center px-6">
+            <h1 className="text-5xl font-extrabold mb-4 text-charcoal dark:text-white">Get in Touch</h1>
+            <p className="text-xl text-charcoal dark:text-white">
+              We’d love to hear from you—drop us a line anytime.
+            </p>
+          </div>
+        </section>
+
+        <div className="max-w-7xl mx-auto px-6 py-16 grid grid-cols-1 lg:grid-cols-3 gap-12">
+          {/* Contact Info */}
+          <div className="space-y-10">
+            <section>
+              <h2 className="text-3xl font-semibold mb-6 border-b border-gray-700 pb-2 text-charcoal dark:text-white">
+                Contact Information
+              </h2>
+              <div className="space-y-6">
+                {[
+                  { Icon: MapPin, label: 'Address', value: '123 Innovation Way, Tech City, CA 94103' },
+                  { Icon: Phone, label: 'Phone', value: '(415) 555-0123', href: 'tel:+14155550123' },
+                  { Icon: MailIcon, label: 'Email', value: 'support@acmeinc.com', href: 'mailto:support@acmeinc.com' },
+                  { Icon: Clock, label: 'Business Hours', value: 'Mon–Fri, 9 AM–6 PM PST' }
+                ].map(({ Icon, label, value, href }) => (
+                  <div key={label} className="flex items-start">
+                    <Icon className="w-7 h-7 text-[#136d15] mt-1 mr-4" />
+                    <div>
+                      <h3 className="text-lg font-medium text-charcoal dark:text-white">{label}</h3>
+                      {href ? (
+                        <a
+                          href={href}
+                          className="text-gray-700 dark:text-gray-300 hover:underline transition"
+                        >
+                          {value}
+                        </a>
+                      ) : (
+                        <p className="text-gray-600 dark:text-gray-400">{value}</p>
+                      )}
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </section>
+
+            {/* Social Links */}
+            <section>
+              <h2 className="text-3xl font-semibold mb-6 border-b border-gray-700 pb-2 text-charcoal dark:text-white">
+                Connect With Us
+              </h2>
+              <div className="flex space-x-4">
+                {[
+                  { Icon: Facebook, url: 'https://facebook.com' },
+                  { Icon: Twitter, url: 'https://twitter.com' },
+                  { Icon: Linkedin, url: 'https://linkedin.com' },
+                  { Icon: Instagram, url: 'https://instagram.com' }
+                ].map(({ Icon, url }) => (
+                  <a
+                    key={url}
+                    href={url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="p-3 rounded-full shadow bg-gray-100 dark:bg-gray-800 hover:bg-[#136d15] transition"
+                  >
+                    <Icon className="w-6 h-6 text-gray-700 dark:text-gray-300 hover:text-white" />
+                  </a>
+                ))}
+              </div>
+            </section>
+          </div>
+
+          {/* Call-to-Action */}
+          <section className="lg:col-span-2 flex flex-col justify-center items-center p-12 rounded-lg text-charcoal dark:text-white">
+            <h2 className="text-4xl font-bold mb-4 text-charcoal dark:text-white">Ready to Talk?</h2>
+            <p className="mb-8 text-center max-w-2xl text-charcoal dark:text-white">
+              Reach out to our team directly via email or phone. We're here to assist you with any inquiries.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-6">
+              <a
+                href="mailto:support@acmeinc.com"
+                className="inline-block border-2 border-[#136d15] text-[#136d15] dark:border-white dark:text-white hover:bg-[#136d15] hover:text-white font-semibold px-10 py-4 rounded-lg transition"
+              >
+                Email Us
+              </a>
+              <a
+                href="tel:+14155550123"
+                className="inline-block border-2 border-[#136d15] text-[#136d15] dark:border-white dark:text-white hover:bg-[#136d15] hover:text-white font-semibold px-10 py-4 rounded-lg transition"
+              >
+                Call 7058526196
+              </a>
+            </div>
+          </section>
+        </div>
+      </main>
+    </div>
+  );
+};
+
+export default ContactUs;

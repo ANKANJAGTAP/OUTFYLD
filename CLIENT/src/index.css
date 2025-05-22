@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply scroll-smooth antialiased;
+  }
+  
+  body {
+    @apply font-body bg-white text-charcoal dark:bg-charcoal dark:text-white transition-colors duration-300;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display font-bold;
+  }
+}
+
+@layer components {
+  .gradient-bg {
+    @apply bg-gradient-to-br from-charcoal to-black dark:from-black dark:to-charcoal;
+  }
+  
+  .scoreboard {
+    @apply font-mono bg-black text-neonGreen border-2 border-neonGreen shadow-[0_0_10px_rgba(0,230,118,0.5)] rounded;
+  }
+  
+  .btn-primary {
+    @apply px-6 py-3 bg-neonGreen text-charcoal font-bold rounded shadow-md hover:shadow-lg hover:bg-opacity-90 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-neonGreen focus:ring-opacity-50;
+  }
+  
+  .input-field {
+    @apply px-4 py-3 bg-white dark:bg-charcoal border-2 border-lightGray dark:border-lightGray/30 rounded focus:outline-none focus:ring-2 focus:ring-neonGreen focus:border-transparent text-charcoal dark:text-white;
+  }
+}
+
+/* Reduced motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
