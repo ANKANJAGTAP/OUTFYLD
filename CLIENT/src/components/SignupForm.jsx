@@ -12,7 +12,7 @@ const SignupForm = () => {
   const iconRef = useRef(null);
   const resetTimeout = useRef(null);
 
-  const API_BASE = import.meta.env.VITE_API_URL
+  const API_BASE = import.meta.env.VITE_API_URL 
   const handleSubmit = async (e) => {
     e.preventDefault();
     setIsSubmitting(true);

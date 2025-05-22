@@ -48,7 +48,6 @@ app.post('/api/signup', async (req, res) => {
 
     // Send welcome email via Resend
     try {
-      console.log(`Sending email to ${email}`);
       const sendResponse = await resend.emails.send({
         from: process.env.FROM_EMAIL,
         to: email,
