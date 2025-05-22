@@ -7,10 +7,11 @@ const { Resend } = require('resend');
 const app = express();
 app.use(cors({
   origin: [
-    "http://localhost:5173",
-    "https://outfyldfrontend.onrender.com",
-    "https://www.outfyld.in",
+   "http://localhost:5173",
+    "https://outfyldfrontend.onrender.com",       // your old Render URL
+    "https://outfyld-frontend-szqq.onrender.com", // exactly as shown in Render
     "https://outfyld.in",
+    "https://www.outfyld.in",
   ],
   methods: "GET,POST,PUT,DELETE",
   credentials: true
