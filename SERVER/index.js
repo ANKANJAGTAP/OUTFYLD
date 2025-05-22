@@ -58,7 +58,6 @@ app.post('/api/signup', async (req, res) => {
           <p>Stay tuned for updates and exclusive offers.</p>
         `,
       });
-      console.log('Resend response:', sendResponse);
     } catch (emailErr) {
       console.error('Email send error:', emailErr);
       // Optionally: continue or return error
@@ -72,5 +71,5 @@ app.post('/api/signup', async (req, res) => {
   }
 });
 
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT;
 app.listen(PORT, () => console.log(`🚀 Server running on http://localhost:${PORT}`));
