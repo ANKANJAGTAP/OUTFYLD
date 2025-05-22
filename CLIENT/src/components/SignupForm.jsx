@@ -12,12 +12,13 @@ const SignupForm = () => {
   const iconRef = useRef(null);
   const resetTimeout = useRef(null);
 
+  const API_BASE = import.meta.env.VITE_API_URL || 'http://localhost:5000';
   const handleSubmit = async (e) => {
     e.preventDefault();
     setIsSubmitting(true);
 
     try {
-      const res = await fetch(`${process.env.REACT_APP_BACKEND_URL}/api/signup`, {
+      const res = await fetch(`${API_BASE}/api/signup`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ name, email })
