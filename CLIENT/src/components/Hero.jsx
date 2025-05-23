@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useLayoutEffect, useRef } from "react";
 import { gsap } from "gsap";
+import { NavLink } from 'react-router-dom';
 
 const Hero = () => {
   const images = [
@@ -129,8 +130,8 @@ const Hero = () => {
 
           {/* CTA Button */}
           <div className="mt-8 sm:mt-10 md:mt-12">
-            <a
-              href="/signup"
+            <NavLink
+              to="/signup"
               ref={buttonRef}
               className="
                 inline-block
@@ -151,7 +152,7 @@ const Hero = () => {
               "
             >
               Get Notified!
-            </a>
+            </NavLink>
           </div>
         </div>
       </div>

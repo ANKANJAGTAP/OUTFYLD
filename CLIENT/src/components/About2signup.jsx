@@ -69,7 +69,7 @@ const SignupForm = () => {
           REGISTER NOW TO GET EXCLUSIVE DISCOUNT
         </h2>
         <p className="text-charcoal/80 dark:text-lightGray">
-          The first 100 signups will receive a 50% discount on their first purchase.
+          The first 100 signups will receive a Exclusive discount on their first purchase.
         </p>
       </div>
 
@@ -135,7 +135,7 @@ const SignupForm = () => {
                 htmlFor="consent"
                 className="ml-2 text-sm text-charcoal/80 dark:text-lightGray"
               >
-                I consent to receive emails about PITCH PERFECT and understand I can unsubscribe anytime.
+                I agree to receive emails about OUTFYLD and understand I can unsubscribe anytime.
               </label>
             </div>
 

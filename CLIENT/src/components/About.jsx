@@ -1,5 +1,6 @@
 import React from 'react';
 import { Zap, Shield, BarChart, Users } from 'lucide-react';
+import { NavLink } from 'react-router-dom';
 
 // Header Section
 const HeaderSection = () => {
@@ -163,12 +164,12 @@ const CtaSection = () => {
         Ready to transform how your team works?
       </p>
       <div className="mt-8 sm:mt-10 md:mt-12">
-            <a
-              href="/signup"
+            <NavLink
+              to="/signup"
               className="inline-block w-full sm:w-auto text-center px-6 sm:px-8 py-4 sm:py-5 text-base md:text-lg font-bold rounded-full bg-[#136d15] text-white shadow-[0_0_20px_rgba(0,230,118,0.5)] hover:shadow-[0_0_30px_rgba(0,230,118,0.8)] hover:bg-[#158017] transform hover:scale-105 transition-all duration-300"
             >
               Get Notified!
-            </a>
+            </NavLink>
           </div>
     </div>
   );
