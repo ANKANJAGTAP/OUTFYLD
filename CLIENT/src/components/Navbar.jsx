@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import { Menu, X, Sun, Moon } from 'lucide-react';
-import { useTheme } from '../contexts/ThemeContext';; // Adjust the path to your logo image
+import { useTheme } from '../contexts/ThemeContext';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -15,21 +15,27 @@ const Navbar = () => {
 
   return (
     <nav className="bg-olive shadow-md fixed top-0 left-0 w-full z-50">
-      <div className="relative max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <div className="relative max-w-7xl mx-auto px-6 h-20 flex justify-between items-center">
         {/* Logo + Brand */}
-        <div className="flex items-center space-x-3">
-  <img
-    src='./images/logo.png'
-    alt="OUTFYLD Logo"
-    className="h-14 w-14 rounded-full object-cover flex-shrink-0"
-  />
-  <NavLink
-    to="/"
-    className="text-3xl font-extrabold text-white tracking-tight"
-  >
-    OUTFYLD
-  </NavLink>
-</div>
+        <div className="flex items-center gap-1 sm:gap-2">
+          <img
+            src="/images/logo.png"
+            alt="OUTFYLD Logo"
+            className={
+              `
+              h-16 w-16        /* 4rem base */
+              sm:h-20 sm:w-20  /* 5rem on small screens+ */
+              md:h-28 md:w-28  /* 7rem on medium screens+ */
+              rounded-full object-cover flex-shrink-0
+            `}
+          />
+          <NavLink
+            to="/"
+            className="text-xl sm:text-2xl md:text-3xl font-extrabold text-white tracking-tight"
+          >
+            OUTFYLD
+          </NavLink>
+        </div>
 
         {/* Desktop nav */}
         <div className="hidden md:flex space-x-8 text-lg absolute left-1/2 transform -translate-x-1/2">
@@ -101,7 +107,10 @@ const Navbar = () => {
             </NavLink>
           ))}
           <button
-            onClick={() => { toggleTheme(); setIsOpen(false); }}
+            onClick={() => {
+              toggleTheme();
+              setIsOpen(false);
+            }}
             aria-label={`Switch to ${theme === 'light' ? 'dark' : 'light'} mode`}
             className="flex items-center justify-center w-full space-x-2 bg-white/20 hover:bg-white/30 text-white py-2 rounded-full transition"
           >
