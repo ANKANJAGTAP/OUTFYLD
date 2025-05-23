@@ -6,10 +6,10 @@ const HeaderSection = () => {
   return (
     <div className="text-center mb-16">
       <h1 className="text-4xl md:text-5xl font-bold text-charcoal dark:text-white mb-4 animate-fade-in">
-        Simplifying Complexity, Amplifying Results
+      Outfyld Powering the Future of Digital Operations
       </h1>
       <p className="text-xl text-charcoal dark:text-white max-w-3xl mx-auto">
-        Your platform for seamless digital transformation
+      Effortlessly reserve your favorite sports fields, find teammates, and join curated competitions—all in one app
       </p>
     </div>
   );
@@ -21,8 +21,7 @@ const AboutSection = () => {
     <div className="mb-24">
       <div className="max-w-3xl mx-auto text-center">
         <p className="text-lg md:text-xl text-charcoal dark:text-white leading-relaxed">
-          We provide enterprise-grade solutions that empower businesses to navigate digital challenges with confidence. 
-          Our platform combines intuitive design with powerful technology, offering unparalleled efficiency for teams of all sizes.
+        Outfyld simplifies every step of your game-day journey. Our platform gives you instant access to local turfs and courts, smart matchmaking so you always find the right teammates or opponents, and turnkey tournament management—all wrapped in an intuitive app that keeps your season organized, competitive, and fun.
         </p>
       </div>
     </div>
@@ -45,23 +44,23 @@ const FeatureGrid = () => {
   const features = [
     {
       icon: <Zap size={32} />,
-      title: "Lightning Fast Setup",
-      description: "Get your projects up and running in minutes with our streamlined onboarding process."
+      title: "Instant Field Booking",
+      description: "Browse real-time availability and lock in your turf, court or pitch in seconds—no phone calls required"
     },
     {
       icon: <Shield size={32} />,
-      title: "Enterprise Security",
-      description: "Bank-level encryption and compliance measures keep your data protected at all times."
+      title: "Secure Payments & Wallet",
+      description: "Pay or get paid instantly through in-app wallets, split bills with friends, and track all transactions safely"
     },
     {
       icon: <BarChart size={32} />,
-      title: "Insightful Analytics",
-      description: "Make data-driven decisions with our comprehensive analytics dashboard."
+      title: "Unified Dashboard",
+      description: "Manage all your upcoming reservations, team invites and match stats from a single intuitive interface"
     },
     {
       icon: <Users size={32} />,
-      title: "Seamless Collaboration",
-      description: "Work together efficiently with real-time updates and intuitive sharing features."
+      title: "Smart Player Matching",
+      description: "Tap into our community pool to find opponents or teammates at your skill level, so every game is competitive"
     }
   ];
 
@@ -93,7 +92,7 @@ const TeamMember = ({ imageUrl, name, role, bio }) => {
           className="w-full h-full object-cover"
         />
       </div>
-      <h3 className="text-xl font-semibold text-gray-900">{name}</h3>
+      <h3 className="text-xl font-semibold text-charcoal dark:text-white">{name}</h3>
       <p className="text-[#136d15] font-medium mb-2">{role}</p>
       <p className="text-charcoal dark:text-white max-w-sm mx-auto">{bio}</p>
     </div>
@@ -104,22 +103,22 @@ const TeamMember = ({ imageUrl, name, role, bio }) => {
 const TeamGrid = () => {
   const teamMembers = [
     {
-      imageUrl: "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=800",
-      name: "Sarah Chen",
-      role: "CEO & Founder",
-      bio: "Visionary leader with 15+ years experience transforming how enterprises leverage technology."
+      imageUrl: "./images/ashay.png",
+      name: "Ashay Jog",
+      role: "Co-Founder, CMO & CFO – Outfyld",
+      bio: "He leads Outfyld’s brand and financial strategy with creativity and precision. As CMO and CFO, he drives growth through sharp marketing instincts and strong financial planning. His vision and leadership have played a key role in shaping Outfyld into a dynamic platform for Gen Z"
     },
     {
-      imageUrl: "https://images.pexels.com/photos/3778603/pexels-photo-3778603.jpeg?auto=compress&cs=tinysrgb&w=800",
-      name: "Alex Rivera",
-      role: "CTO",
-      bio: "Tech innovator focused on building scalable solutions that solve real-world problems."
+      imageUrl: "./images/ankan.png",
+      name: "Ankan Jagtap",
+      role: "Co-Founder & CTO – Outfyld",
+      bio: "He builds and powers the tech behind Outfyld. With strong development skills and an innovative mindset, he ensures the platform stays fast, scalable, and user-friendly. His tech leadership is at the core of Outfyld’s seamless experience"
     },
     {
-      imageUrl: "https://images.pexels.com/photos/3760583/pexels-photo-3760583.jpeg?auto=compress&cs=tinysrgb&w=800",
-      name: "Maya Johnson",
-      role: "Head of Product",
-      bio: "Product strategist dedicated to creating intuitive experiences that delight users."
+      imageUrl: "./images/siddesh.png",
+      name: "Siddhesh Hadole",
+      role: "Co-Founder & COO – Outfyld",
+      bio: "He keeps Outfyld running efficiently and effectively. With a focus on smooth execution and strong operations, he turns strategy into action. His structured approach and drive keep the team aligned and the platform thriving"
     }
   ];
 
@@ -148,8 +147,8 @@ const MissionSection = () => {
       <div className="max-w-4xl mx-auto px-6">
         <h2 className="text-3xl font-bold text-white mb-6">Our Mission</h2>
         <p className="text-xl text-white leading-relaxed">
-          Our mission is to empower organizations with technology that transforms challenges into opportunities, 
-          enabling innovation that drives meaningful progress.
+        To unlock easy access to play by revolutionizing the way India books and experiences turf sports.
+        We aim to empower young athletes and casual players alike by providing a smooth, tech-driven solution that brings people together through sport.
         </p>
       </div>
     </div>
@@ -165,7 +164,7 @@ const CtaSection = () => {
       </p>
       <div className="mt-8 sm:mt-10 md:mt-12">
             <a
-              href="/notify"
+              href="/signup"
               className="inline-block w-full sm:w-auto text-center px-6 sm:px-8 py-4 sm:py-5 text-base md:text-lg font-bold rounded-full bg-[#136d15] text-white shadow-[0_0_20px_rgba(0,230,118,0.5)] hover:shadow-[0_0_30px_rgba(0,230,118,0.8)] hover:bg-[#158017] transform hover:scale-105 transition-all duration-300"
             >
               Get Notified!

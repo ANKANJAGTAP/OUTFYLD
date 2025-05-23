@@ -5,17 +5,17 @@ import { Twitter, Linkedin, MessageCircle } from 'lucide-react';
 const socialLinks = [
   {
     icon: <Twitter className="w-5 h-5" />,
-    url: "#",
+    url: "https://x.com/AnkanJagtap",
     label: "Follow us on Twitter"
   },
   {
     icon: <Linkedin className="w-5 h-5" />,
-    url: "#",
+    url: 'https://linkedin.com/in/ankan-jagtap-384902367',
     label: "Connect on LinkedIn"
   },
   {
     icon: <MessageCircle className="w-5 h-5" />,
-    url: "#",
+    url: "https://www.instagram.com/outfyld?igsh=MTRkbm16bWRmYnc1bQ%3D%3D",
     label: "Join our Discord"
   }
 ];

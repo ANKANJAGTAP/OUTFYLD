@@ -5,10 +5,10 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 const milestones = [
-  { quarter: "Q1 2025", title: "Platform Launch", description: "Initial platform release with core booking features" },
-  { quarter: "Q2 2025", title: "Mobile App", description: "Native mobile applications for iOS and Android" },
-  { quarter: "Q3 2025", title: "League Integration", description: "Seamless integration with local sports leagues" },
-  { quarter: "Q4 2025", title: "Global Expansion", description: "Expansion to international markets" },
+  { quarter: "STEP I", title: "Find Your Perfect Turf", description: "Browse nearby pitches with real-time availability, photos, and transparent pricing" },
+  { quarter: "STEP II", title: "Book in Seconds", description: "Select your slot, pay securely, and get instant confirmation—all from your phone or desktop" },
+  { quarter: "STEP III", title: "Show Up & Play", description: "Arrive at the venue, scan your booking QR code, and enjoy the game on a professionally maintained turf" },
+  { quarter: "STEP IV", title: "Review & Replay", description: "Rate your experience, leave feedback, and earn loyalty rewards for your next booking" },
 ];
 
 const Timeline = () => {

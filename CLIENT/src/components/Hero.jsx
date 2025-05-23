@@ -18,7 +18,7 @@ const Hero = () => {
 
   const text = "OUTFYLD IS COMING SOON";
   const headingChars = text.split("");
-  const subwords = "Reserve your favorite pitch in seconds. Never miss a game with real-time availability.".split(" ");
+  const subwords = "Reserve your favourite turf, find your favourite pitch in seconds. Never miss a game with real-time availability.".split(" ");
 
   // Background image rotation
   useEffect(() => {
@@ -130,7 +130,7 @@ const Hero = () => {
           {/* CTA Button */}
           <div className="mt-8 sm:mt-10 md:mt-12">
             <a
-              href="/notify"
+              href="/signup"
               ref={buttonRef}
               className="
                 inline-block

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import { Menu, X, Sun, Moon } from 'lucide-react';
-import { useTheme } from '../contexts/ThemeContext';
+import { useTheme } from '../contexts/ThemeContext';; // Adjust the path to your logo image
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -18,14 +18,18 @@ const Navbar = () => {
       <div className="relative max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
         {/* Logo + Brand */}
         <div className="flex items-center space-x-3">
-          <div className="h-8 w-8 bg-white rounded-full flex-shrink-0" />
-          <NavLink
-            to="/"
-            className="text-3xl font-extrabold text-white tracking-tight"
-          >
-            OUTFYLD
-          </NavLink>
-        </div>
+  <img
+    src='./images/logo.png'
+    alt="OUTFYLD Logo"
+    className="h-14 w-14 rounded-full object-cover flex-shrink-0"
+  />
+  <NavLink
+    to="/"
+    className="text-3xl font-extrabold text-white tracking-tight"
+  >
+    OUTFYLD
+  </NavLink>
+</div>
 
         {/* Desktop nav */}
         <div className="hidden md:flex space-x-8 text-lg absolute left-1/2 transform -translate-x-1/2">

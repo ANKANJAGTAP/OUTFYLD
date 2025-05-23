@@ -17,7 +17,7 @@ const ContactUs = () => {
       <header>
         <div className="max-w-7xl mx-auto px-6 py-4 flex items-center">
           <a href="/" className="inline-block">
-            <img src="[YOUR_LOGO_URL]" alt="[YOUR COMPANY NAME] logo" className="h-12" />
+            <img src="./images/logo.png" alt="OUTFYLD logo" className="h-12" />
           </a>
         </div>
       </header>
@@ -43,10 +43,10 @@ const ContactUs = () => {
               </h2>
               <div className="space-y-6">
                 {[
-                  { Icon: MapPin, label: 'Address', value: '123 Innovation Way, Tech City, CA 94103' },
-                  { Icon: Phone, label: 'Phone', value: '(415) 555-0123', href: 'tel:+14155550123' },
-                  { Icon: MailIcon, label: 'Email', value: 'support@acmeinc.com', href: 'mailto:support@acmeinc.com' },
-                  { Icon: Clock, label: 'Business Hours', value: 'Mon–Fri, 9 AM–6 PM PST' }
+                  { Icon: MapPin, label: 'Address', value: 'Amravati, Maharashtra, India' },
+                  { Icon: Phone, label: 'Phone', value: '(+91) 7058526196', href: 'tel:+917058526196' },
+                  { Icon: MailIcon, label: 'Email', value: 'admin@outfyld.in', href: 'mailto:admin@outfyld.in' },
+                  { Icon: Clock, label: 'Business Hours', value: 'Mon–Fri, 9 AM–6 PM IST' }
                 ].map(({ Icon, label, value, href }) => (
                   <div key={label} className="flex items-start">
                     <Icon className="w-7 h-7 text-[#136d15] mt-1 mr-4" />
@@ -75,10 +75,10 @@ const ContactUs = () => {
               </h2>
               <div className="flex space-x-4">
                 {[
-                  { Icon: Facebook, url: 'https://facebook.com' },
-                  { Icon: Twitter, url: 'https://twitter.com' },
-                  { Icon: Linkedin, url: 'https://linkedin.com' },
-                  { Icon: Instagram, url: 'https://instagram.com' }
+                  { Icon: Facebook, url: 'https://www.instagram.com/outfyld?igsh=MTRkbm16bWRmYnc1bQ%3D%3D' },
+                  { Icon: Twitter, url: 'https://x.com/AnkanJagtap' },
+                  { Icon: Linkedin, url: 'https://linkedin.com/in/ankan-jagtap-384902367' },
+                  { Icon: Instagram, url: 'https://www.instagram.com/outfyld?igsh=MTRkbm16bWRmYnc1bQ%3D%3D' }
                 ].map(({ Icon, url }) => (
                   <a
                     key={url}
@@ -102,7 +102,7 @@ const ContactUs = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-6">
               <a
-                href="mailto:support@acmeinc.com"
+                href="mailto:admin@outfyld.in"
                 className="inline-block border-2 border-[#136d15] text-[#136d15] dark:border-white dark:text-white hover:bg-[#136d15] hover:text-white font-semibold px-10 py-4 rounded-lg transition"
               >
                 Email Us
