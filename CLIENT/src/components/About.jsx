@@ -103,16 +103,16 @@ const TeamMember = ({ imageUrl, name, role, bio }) => {
 const TeamGrid = () => {
   const teamMembers = [
     {
-      imageUrl: "./images/ashay.png",
-      name: "Ashay Jog",
-      role: "Co-Founder, CMO & CFO – Outfyld",
-      bio: "He leads Outfyld’s brand and financial strategy with creativity and precision. As CMO and CFO, he drives growth through sharp marketing instincts and strong financial planning. His vision and leadership have played a key role in shaping Outfyld into a dynamic platform for Gen Z"
-    },
-    {
       imageUrl: "./images/ankan.png",
       name: "Ankan Jagtap",
       role: "Co-Founder & CTO – Outfyld",
       bio: "He builds and powers the tech behind Outfyld. With strong development skills and an innovative mindset, he ensures the platform stays fast, scalable, and user-friendly. His tech leadership is at the core of Outfyld’s seamless experience"
+    },
+    {
+      imageUrl: "./images/ashay.png",
+      name: "Ashay Jog",
+      role: "Co-Founder, CMO & CFO – Outfyld",
+      bio: "He leads Outfyld’s brand and financial strategy with creativity and precision. As CMO and CFO, he drives growth through sharp marketing instincts and strong financial planning. His vision and leadership have played a key role in shaping Outfyld into a dynamic platform for Gen Z"
     },
     {
       imageUrl: "./images/siddesh.png",
