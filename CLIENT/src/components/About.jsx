@@ -6,10 +6,10 @@ import { NavLink } from 'react-router-dom';
 const HeaderSection = () => {
   return (
     <div className="text-center mb-16">
-      <h1 className="text-4xl md:text-5xl font-bold text-charcoal dark:text-white mb-4 animate-fade-in">
+      <h1 className="text-4xl md:text-5xl font-bold text-neonGreen mb-4 animate-fade-in">
       Outfyld Powering the Future of Digital Operations
       </h1>
-      <p className="text-xl text-charcoal dark:text-white max-w-3xl mx-auto">
+      <p className="text-xl text-white max-w-3xl mx-auto">
       Effortlessly reserve your favorite sports fields, find teammates, and join curated competitions—all in one app
       </p>
     </div>
@@ -21,7 +21,7 @@ const AboutSection = () => {
   return (
     <div className="mb-24">
       <div className="max-w-3xl mx-auto text-center">
-        <p className="text-lg md:text-xl text-charcoal dark:text-white leading-relaxed">
+        <p className="text-lg md:text-xl text-white leading-relaxed">
         Outfyld simplifies every step of your game-day journey. Our platform gives you instant access to local turfs and courts, smart matchmaking so you always find the right teammates or opponents, and turnkey tournament management—all wrapped in an intuitive app that keeps your season organized, competitive, and fun.
         </p>
       </div>
@@ -33,7 +33,7 @@ const AboutSection = () => {
 const FeatureCard = ({ icon, title, description }) => {
   return (
     <div className="bg-white rounded-2xl shadow-md p-8 transition-all duration-300 hover:shadow-lg hover:translate-y-[-4px]">
-      <div className="text-[#136d15] mb-4">{icon}</div>
+      <div className="text-neonGreen  mb-4">{icon}</div>
       <h3 className="text-xl font-semibold text-gray-900 mb-2">{title}</h3>
       <p className="text-gray-600">{description}</p>
     </div>
@@ -67,7 +67,7 @@ const FeatureGrid = () => {
 
   return (
     <div className="mb-24">
-      <h2 className="text-3xl font-bold text-charcoal dark:text-white mb-10 text-center">What We Offer</h2>
+      <h2 className="text-3xl font-bold text-neonGreen mb-10 text-center">What We Offer</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
         {features.map((feature, index) => (
           <FeatureCard
@@ -94,7 +94,7 @@ const TeamMember = ({ imageUrl, name, role, bio }) => {
         />
       </div>
       <h3 className="text-xl font-semibold text-charcoal dark:text-white">{name}</h3>
-      <p className="text-[#136d15] font-medium mb-2">{role}</p>
+      <p className="text-neonGreen font-medium mb-2">{role}</p>
       <p className="text-charcoal dark:text-white max-w-sm mx-auto">{bio}</p>
     </div>
   );
@@ -125,7 +125,7 @@ const TeamGrid = () => {
 
   return (
     <div className="mb-24">
-      <h2 className="text-3xl font-bold text-charcoal dark:text-white mb-10 text-center">Meet the Team</h2>
+      <h2 className="text-3xl font-bold text-neonGreen mb-10 text-center">Meet the Team</h2>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
         {teamMembers.map((member, index) => (
           <TeamMember
@@ -144,7 +144,7 @@ const TeamGrid = () => {
 // Mission Section
 const MissionSection = () => {
   return (
-    <div className="mb-24 py-16 bg-[#136d15] rounded-2xl text-center">
+    <div className="mb-24 py-16 bg-neonGreen rounded-2xl text-center">
       <div className="max-w-4xl mx-auto px-6">
         <h2 className="text-3xl font-bold text-white mb-6">Our Mission</h2>
         <p className="text-xl text-white leading-relaxed">
@@ -160,13 +160,13 @@ const MissionSection = () => {
 const CtaSection = () => {
   return (
     <div className="text-center mb-24">
-      <p className="text-lg text-charcoal dark:text-white mb-8">
+      <p className="text-lg text-white mb-8">
         Ready to transform how your team works?
       </p>
       <div className="mt-8 sm:mt-10 md:mt-12">
             <NavLink
               to="/signup"
-              className="inline-block w-full sm:w-auto text-center px-6 sm:px-8 py-4 sm:py-5 text-base md:text-lg font-bold rounded-full bg-[#136d15] text-white shadow-[0_0_20px_rgba(0,230,118,0.5)] hover:shadow-[0_0_30px_rgba(0,230,118,0.8)] hover:bg-[#158017] transform hover:scale-105 transition-all duration-300"
+              className="inline-block w-full sm:w-auto text-center px-6 sm:px-8 py-4 sm:py-5 text-base md:text-lg font-bold rounded-full bg-neonGreen  text-white shadow-[0_0_20px_rgba(0,230,118,0.5)] hover:shadow-[0_0_30px_rgba(0,230,118,0.8)] hover:bg-[#13586d] transform hover:scale-105 transition-all duration-300"
             >
               Get Notified!
             </NavLink>

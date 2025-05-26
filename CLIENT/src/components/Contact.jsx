@@ -12,7 +12,7 @@ import {
 
 const ContactUs = () => {
   return (
-    <div className="min-h-screen flex flex-col bg-white dark:bg-charcoal">
+    <div className="min-h-screen flex flex-col ">
       {/* Header */}
       <header>
         <div className="max-w-7xl mx-auto px-6 py-4 flex items-center">
@@ -27,8 +27,8 @@ const ContactUs = () => {
         {/* Hero Section */}
         <section className="py-20">
           <div className="max-w-4xl mx-auto text-center px-6">
-            <h1 className="text-5xl font-extrabold mb-4 text-charcoal dark:text-white">Get in Touch</h1>
-            <p className="text-xl text-charcoal dark:text-white">
+            <h1 className="text-5xl font-extrabold mb-4  text-neonGreen">Get in Touch</h1>
+            <p className="text-xl  dark:text-white">
               We’d love to hear from you—drop us a line anytime.
             </p>
           </div>
@@ -38,7 +38,7 @@ const ContactUs = () => {
           {/* Contact Info */}
           <div className="space-y-10">
             <section>
-              <h2 className="text-3xl font-semibold mb-6 border-b border-gray-700 pb-2 text-charcoal dark:text-white">
+              <h2 className="text-3xl font-semibold mb-6 border-b border-gray-700 pb-2 text-white">
                 Contact Information
               </h2>
               <div className="space-y-6">
@@ -49,9 +49,9 @@ const ContactUs = () => {
                   { Icon: Clock, label: 'Business Hours', value: 'Mon–Fri, 9 AM–6 PM IST' }
                 ].map(({ Icon, label, value, href }) => (
                   <div key={label} className="flex items-start">
-                    <Icon className="w-7 h-7 text-[#136d15] mt-1 mr-4" />
+                    <Icon className="w-7 h-7 text-neonGreen mt-1 mr-4" />
                     <div>
-                      <h3 className="text-lg font-medium text-charcoal dark:text-white">{label}</h3>
+                      <h3 className="text-lg font-medium text-white">{label}</h3>
                       {href ? (
                         <a
                           href={href}
@@ -70,7 +70,7 @@ const ContactUs = () => {
 
             {/* Social Links */}
             <section>
-              <h2 className="text-3xl font-semibold mb-6 border-b border-gray-700 pb-2 text-charcoal dark:text-white">
+              <h2 className="text-3xl font-semibold mb-6 border-b border-gray-700 pb-2 text-white">
                 Connect With Us
               </h2>
               <div className="flex space-x-4">
@@ -85,7 +85,7 @@ const ContactUs = () => {
                     href={url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="p-3 rounded-full shadow bg-gray-100 dark:bg-gray-800 hover:bg-[#136d15] transition"
+                    className="p-3 rounded-full shadow bg-gray-100 dark:bg-gray-800 hover:bg-[#13586d] transition"
                   >
                     <Icon className="w-6 h-6 text-gray-700 dark:text-gray-300 hover:text-white" />
                   </a>
@@ -103,13 +103,13 @@ const ContactUs = () => {
             <div className="flex flex-col sm:flex-row gap-6">
               <a
                 href="mailto:admin@outfyld.in"
-                className="inline-block border-2 border-[#136d15] text-[#136d15] dark:border-white dark:text-white hover:bg-[#136d15] hover:text-white font-semibold px-10 py-4 rounded-lg transition"
+                className="inline-block border-2 border-neonGreen text-neonGreen dark:border-white dark:text-white hover:bg-[#13586d] hover:text-white font-semibold px-10 py-4 rounded-lg transition"
               >
                 Email Us
               </a>
               <a
                 href="tel:+14155550123"
-                className="inline-block border-2 border-[#136d15] text-[#136d15] dark:border-white dark:text-white hover:bg-[#136d15] hover:text-white font-semibold px-10 py-4 rounded-lg transition"
+                className="inline-block border-2 border-neonGreen text-neonGreen dark:border-white dark:text-white hover:bg-[#13586d] hover:text-white font-semibold px-10 py-4 rounded-lg transition"
               >
                 Call 7058526196
               </a>

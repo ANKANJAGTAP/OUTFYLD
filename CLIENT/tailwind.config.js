@@ -5,10 +5,10 @@ export default {
   theme: {
     extend: {
       colors: {
-        charcoal: '#1C1C1C',
-        lightGray: '#B0BEC5',
-        neonGreen: '#136d15',
-        olive:'#136d15',
+        charcoal: '#000000',
+        lightGray: '#00FFF0',
+        neonGreen: '#00FFF0',
+        olive:'#0D0D2B',
       },
       fontFamily: {
         display: ['Inter', 'system-ui', 'sans-serif'],

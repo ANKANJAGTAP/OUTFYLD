@@ -106,21 +106,11 @@ const Navbar = () => {
               {item.name}
             </NavLink>
           ))}
-          <button
-            onClick={() => {
-              toggleTheme();
-              setIsOpen(false);
-            }}
-            aria-label={`Switch to ${theme === 'light' ? 'dark' : 'light'} mode`}
-            className="flex items-center justify-center w-full space-x-2 bg-white/20 hover:bg-white/30 text-white py-2 rounded-full transition"
-          >
-            {theme === 'light' ? <Moon size={18} /> : <Sun size={18} />}
-            <span>{theme === 'light' ? 'Dark Mode' : 'Light Mode'}</span>
-          </button>
+      
           <NavLink
             to="/signup"
             onClick={() => setIsOpen(false)}
-            className="block text-center bg-white text-green-600 py-2 rounded-full hover:bg-green-50 transition duration-200"
+            className="block text-center bg-white text-neonGreen py-2 rounded-full hover:bg-green-50 transition duration-200"
           >
             Sign Up
           </NavLink>

@@ -73,21 +73,14 @@ const Timeline = () => {
   return (
     <section
       ref={timelineRef}
-      className="flex flex-col items-center justify-center min-h-screen bg-white dark:bg-charcoal px-6 sm:px-12"
+      className="flex flex-col items-center justify-center min-h-screen  px-6 sm:px-12"
     >
-      <h2 className="mt-8 text-3xl sm:text-4xl font-bold text-center mb-12 text-charcoal dark:text-white tracking-wide">
+      <h2 className="mt-8 text-3xl sm:text-4xl font-bold text-center mb-12  text-white tracking-wide">
         ROADMAP
       </h2>
 
       <div className="relative w-full max-w-6xl">
         {/* Timeline line with gradient and rounded edges */}
-        <div
-          className="timeline-line absolute top-10 left-0 right-0 h-2 rounded-full origin-left"
-          style={{
-            background: "linear-gradient(90deg, #00e676, #00b33c)",
-            boxShadow: "0 0 12px rgba(0, 230, 118, 0.7)",
-          }}
-        />
 
         {/* Milestones grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mt-16">

@@ -6,11 +6,11 @@
 
 @layer base {
   html {
-    @apply scroll-smooth antialiased;
+    @apply scroll-smooth antialiased bg-transparent dark:bg-black;
   }
-  
+
   body {
-    @apply font-body bg-white text-charcoal dark:bg-charcoal dark:text-white transition-colors duration-300;
+    @apply font-body bg-transparent dark:bg-charcoal dark:text-white transition-colors duration-300;
   }
   
   h1, h2, h3, h4, h5, h6 {
@@ -36,7 +36,6 @@
   }
 }
 
-/* Reduced motion preferences */
 @media (prefers-reduced-motion: reduce) {
   *, ::before, ::after {
     animation-duration: 0.01ms !important;
