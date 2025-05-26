@@ -104,20 +104,20 @@ const TeamMember = ({ imageUrl, name, role, bio }) => {
 const TeamGrid = () => {
   const teamMembers = [
     {
-      imageUrl: "./images/ankan.png",
-      name: "Ankan Jagtap",
+      imageUrl: "https://plus.unsplash.com/premium_photo-1672322565907-932e7554b1cc?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bWFsZSUyMG1vZGVsc3xlbnwwfHwwfHx8MA%3D%3D",
+      name: "JHON DOE",
       role: "Co-Founder & CTO – Outfyld",
       bio: "He builds and powers the tech behind Outfyld. With strong development skills and an innovative mindset, he ensures the platform stays fast, scalable, and user-friendly. His tech leadership is at the core of Outfyld’s seamless experience"
     },
     {
-      imageUrl: "./images/ashay.png",
-      name: "Ashay Jog",
+      imageUrl: "https://plus.unsplash.com/premium_photo-1672322565907-932e7554b1cc?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bWFsZSUyMG1vZGVsc3xlbnwwfHwwfHx8MA%3D%3D",
+      name: "Jane Smith",
       role: "Co-Founder, CMO & CFO – Outfyld",
       bio: "He leads Outfyld’s brand and financial strategy with creativity and precision. As CMO and CFO, he drives growth through sharp marketing instincts and strong financial planning. His vision and leadership have played a key role in shaping Outfyld into a dynamic platform for Gen Z"
     },
     {
-      imageUrl: "./images/siddesh.png",
-      name: "Siddhesh Hadole",
+      imageUrl: "https://images.unsplash.com/photo-1723557416930-44bfddef2f2a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8bWFsZSUyMG1vZGVsc3xlbnwwfHwwfHx8MA%3D%3D",
+      name: "Alex Johnson",
       role: "Co-Founder & COO – Outfyld",
       bio: "He keeps Outfyld running efficiently and effectively. With a focus on smooth execution and strong operations, he turns strategy into action. His structured approach and drive keep the team aligned and the platform thriving"
     }
