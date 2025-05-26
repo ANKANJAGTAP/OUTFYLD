@@ -15,6 +15,7 @@ import Navbar from './components/Navbar';
 import About from './components/About';
 import Contact from './components/Contact';
 import About2 from './components/About2signup';
+import LandingPage from './components/Landingpage';
 
 const pageVariants = {
   initial: { opacity: 0, x: 100, scale: 0.95 },
@@ -85,6 +86,7 @@ const App = () => {
                 <Route path="/" element={
                   <>
                     <Hero />
+                    <LandingPage />
                     <main className="container mx-auto px-4 pb-20">
                       <CountdownTimer />
                       <Timeline />

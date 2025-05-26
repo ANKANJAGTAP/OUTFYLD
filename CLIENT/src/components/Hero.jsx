@@ -31,9 +31,7 @@ function ModelRig({ mouse }) {
     return () => window.removeEventListener("mousemove", handleMouseMove);
   }, []);
 
-  useFrame(() => {
-    // Optionally update on each frame
-  });
+  useFrame(() => {});
 
   return (
     <group ref={group}>
@@ -121,5 +119,5 @@ export default function HeroSection() {
         </button>
       </div>
     </section>
-  );
+  );
 }
