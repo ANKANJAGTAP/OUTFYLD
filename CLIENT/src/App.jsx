@@ -5,7 +5,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
 
-import Hero from "./components/Hero";
+import Start from "./components/startpage";
 import Timeline from "./components/Timeline";
 import SignupForm from "./components/SignupForm";
 import Footer from "./components/Footer";
@@ -15,7 +15,6 @@ import Navbar from "./components/Navbar";
 import About from "./components/About";
 import Contact from "./components/Contact";
 import About2 from "./components/About2signup";
-import LandingPage from "./components/Landingpage";
 
 const pageVariants = {
   initial: { opacity: 0, x: 100, scale: 0.95 },
@@ -93,16 +92,14 @@ const App = () => {
                   path="/"
                   element={
                     <>
-                      <Hero />
-                      <LandingPage />
-
+                      <Start /> 
                       <main className="container mx-auto px-4 pb-20">
                         <CountdownTimer />
                         <Timeline />
                         <section className="my-16">
                           <SignupForm />
                         </section>
-                        <section className="my-16">
+                        <section className="my-16"> 
                           <TriviaTicker />
                         </section>
                       </main>

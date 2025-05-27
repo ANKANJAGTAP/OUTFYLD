@@ -5,7 +5,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 const milestones = [
-  { quarter: "STEP I", title: "Find Your Perfect Turf", description: "Browse nearby pitches with real-time availability, photos, and transparent pricing" },
+  { quarter: "STEP I", title: "Book & Play!", description: "Book PlayStations near you in just a few taps. Whether it’s a chill solo session or a gaming night with friends, we’ve got you covered." },
   { quarter: "STEP II", title: "Book in Seconds", description: "Select your slot, pay securely, and get instant confirmation—all from your phone or desktop" },
   { quarter: "STEP III", title: "Show Up & Play", description: "Arrive at the venue, scan your booking QR code, and enjoy the game on a professionally maintained turf" },
   { quarter: "STEP IV", title: "Review & Replay", description: "Rate your experience, leave feedback, and earn loyalty rewards for your next booking" },

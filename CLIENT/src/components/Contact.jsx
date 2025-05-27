@@ -14,13 +14,6 @@ const ContactUs = () => {
   return (
     <div className="min-h-screen flex flex-col ">
       {/* Header */}
-      <header>
-        <div className="max-w-7xl mx-auto px-6 py-4 flex items-center">
-          <a href="/" className="inline-block">
-            <img src="./images/logo.png" alt="OUTFYLD logo" className="h-12" />
-          </a>
-        </div>
-      </header>
 
       {/* Main Content */}
       <main className="flex-grow">

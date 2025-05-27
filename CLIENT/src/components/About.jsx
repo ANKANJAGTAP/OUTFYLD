@@ -7,10 +7,10 @@ const HeaderSection = () => {
   return (
     <div className="text-center mb-16">
       <h1 className="text-4xl md:text-5xl font-bold text-neonGreen mb-4 animate-fade-in">
-      Outfyld Powering the Future of Digital Operations
+      Outfyld Powering the Future of E-Sports Booking
       </h1>
       <p className="text-xl text-white max-w-3xl mx-auto">
-      Effortlessly reserve your favorite sports fields, find teammates, and join curated competitions—all in one app
+      Effortlessly reserve your favorite gaming stations, assemble teams, and join curated tournaments—all in one platform.
       </p>
     </div>
   );
@@ -22,8 +22,7 @@ const AboutSection = () => {
     <div className="mb-24">
       <div className="max-w-3xl mx-auto text-center">
         <p className="text-lg md:text-xl text-white leading-relaxed">
-        Outfyld simplifies every step of your game-day journey. Our platform gives you instant access to local turfs and courts, smart matchmaking so you always find the right teammates or opponents, and turnkey tournament management—all wrapped in an intuitive app that keeps your season organized, competitive, and fun.
-        </p>
+        OUTFYLD simplifies every step of your competitive gaming journey. Our platform gives you instant access to local and online arenas, intelligent team-and-opponent matchmaking so you always find the perfect squad or rival, and turnkey tournament management—wrapped in an intuitive app that keeps your season organized, competitive, and fun.        </p>
       </div>
     </div>
   );
@@ -45,23 +44,23 @@ const FeatureGrid = () => {
   const features = [
     {
       icon: <Zap size={32} />,
-      title: "Instant Field Booking",
-      description: "Browse real-time availability and lock in your turf, court or pitch in seconds—no phone calls required"
+      title: "Instant Arena Booking",
+      description: "Browse real-time availability of PC rigs, console pods, or custom lobbies and lock in your session in seconds—no phone calls or emails required."
     },
     {
       icon: <Shield size={32} />,
       title: "Secure Payments & Wallet",
-      description: "Pay or get paid instantly through in-app wallets, split bills with friends, and track all transactions safely"
+      description: "Pay or get paid through in-app wallets, split entry fees with teammates, and track every transaction safely—so you can focus on the game."
     },
     {
       icon: <BarChart size={32} />,
       title: "Unified Dashboard",
-      description: "Manage all your upcoming reservations, team invites and match stats from a single intuitive interface"
+      description: "Manage all your upcoming bookings, team invites, match results, and stat leaderboards from one intuitive interface."
     },
     {
       icon: <Users size={32} />,
       title: "Smart Player Matching",
-      description: "Tap into our community pool to find opponents or teammates at your skill level, so every game is competitive"
+      description: "Tap into our community pool to find teammates or opponents at your exact skill level and preferred game modes—so every match stays competitive"
     }
   ];
 
@@ -104,20 +103,20 @@ const TeamMember = ({ imageUrl, name, role, bio }) => {
 const TeamGrid = () => {
   const teamMembers = [
     {
-      imageUrl: "https://plus.unsplash.com/premium_photo-1672322565907-932e7554b1cc?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bWFsZSUyMG1vZGVsc3xlbnwwfHwwfHx8MA%3D%3D",
-      name: "JHON DOE",
+      imageUrl: "./images/ankan.png",
+      name: "Ankan Jagtap",
       role: "Co-Founder & CTO – Outfyld",
       bio: "He builds and powers the tech behind Outfyld. With strong development skills and an innovative mindset, he ensures the platform stays fast, scalable, and user-friendly. His tech leadership is at the core of Outfyld’s seamless experience"
     },
     {
-      imageUrl: "https://plus.unsplash.com/premium_photo-1672322565907-932e7554b1cc?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bWFsZSUyMG1vZGVsc3xlbnwwfHwwfHx8MA%3D%3D",
-      name: "Jane Smith",
+      imageUrl: "./images/ashay.png",
+      name: "Ashay Jog",
       role: "Co-Founder, CMO & CFO – Outfyld",
       bio: "He leads Outfyld’s brand and financial strategy with creativity and precision. As CMO and CFO, he drives growth through sharp marketing instincts and strong financial planning. His vision and leadership have played a key role in shaping Outfyld into a dynamic platform for Gen Z"
     },
     {
-      imageUrl: "https://images.unsplash.com/photo-1723557416930-44bfddef2f2a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8bWFsZSUyMG1vZGVsc3xlbnwwfHwwfHx8MA%3D%3D",
-      name: "Alex Johnson",
+      imageUrl: "./images/siddesh.png",
+      name: "Siddhesh Hadole",
       role: "Co-Founder & COO – Outfyld",
       bio: "He keeps Outfyld running efficiently and effectively. With a focus on smooth execution and strong operations, he turns strategy into action. His structured approach and drive keep the team aligned and the platform thriving"
     }
@@ -148,8 +147,8 @@ const MissionSection = () => {
       <div className="max-w-4xl mx-auto px-6">
         <h2 className="text-3xl font-bold text-white mb-6">Our Mission</h2>
         <p className="text-xl text-white leading-relaxed">
-        To unlock easy access to play by revolutionizing the way India books and experiences turf sports.
-        We aim to empower young athletes and casual players alike by providing a smooth, tech-driven solution that brings people together through sport.
+        To unlock easy access to play by revolutionizing the way India books and experiences e-sports.
+        We aim to empower young gamers by providing a smooth, tech-driven solution that brings people together through sport.
         </p>
       </div>
     </div>
